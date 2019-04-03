@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "Sofia";
+  src: url("./src/fonts/sofiapro-light/sofiapro-light.woff") format("woff"), url("./src/fonts/sofiapro-light/sofiapro-light.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  font-family: "Sofia";
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+header {
+  width: 100%;
+  height: 260px;
+  background-image: linear-gradient(to right, #290a59 0%, #761ec1 64%, #dc46f2 100%);
+  box-shadow: 0 6px 21px rgba(0, 0, 0, 0.6);
+}
+header .title {
+  color: #fff;
+  font-weight: 400;
+  font-size: 130px;
+  line-height: 260px;
+  text-align: center;
+}
+
+.input_form {
+  width: 840px;
+  padding: 40px 60px 40px 40px;
+  display: block;
+  border-radius: 0 0 12px 12px;
+  background: #fff;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.35);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.input_form .input_labels {
+  display: flex;
+  flex-direction: column;
+}
+.input_form .input_labels label {
+  margin: 0 0 10px 0;
+  color: #1d0143;
+  font-size: 30px;
+}
+.input_form .input_labels label input {
+  box-sizing: border-box;
+  width: 531px;
+  border-radius: 10px;
+  height: 70px;
+  box-shadow: none;
+  border: 1px solid #ddd;
+  float: right;
+  background-color: #f5f5f5;
+  padding-left: 20px;
+  font-size: 30px;
+  color: #656565;
+}
+.input_form .file_container {
+  position: relative;
+  width: 367px;
+  height: 169px;
+  display: inline-block;
+}
+.input_form .file_container input {
+  display: block;
+  position: absolute;
+  width: 367px;
+  height: 169px;
+  opacity: 0;
+}
+.input_form .file_container span {
+  display: block;
+  position: absolute;
+  color: #1d0143;
+  font-size: 30px;
+  font-weight: 400;
+  width: 367px;
+  height: 169px;
+  border-radius: 10px;
+  border: 1px solid #1d0143;
+  background-color: #f5f5f5;
+  text-align: center;
+  line-height: 169px;
+}
+.input_form .form_title {
+  color: #1d0143;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0 50px 60px 0;
+}
+.input_form .form_title .plus {
+  display: inline-block;
+}
+.input_form button {
+  width: 342px;
+  height: 169px;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  background-image: linear-gradient(to right, #290a59 0%, #761ec1 58%, #dc46f2 100%);
+  float: right;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: none;
+}
+
+.output_form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 100px auto;
+}
+.output_form .item {
+  width: 30%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  background-color: #fff;
+  margin-bottom: 50px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.output_form .item:nth-child(3n-1) {
+  margin: 0 5% 50px 5%;
+}
+.output_form .item .name {
+  color: #1d0143;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.output_form .item .price {
+  color: #600303;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+.output_form .item .del_button {
+  background: #600303;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #f5f5f5;
+  border: none;
+  border-radius: 10px;
+  width: 206px;
+  height: 56px;
+  margin-top: 15px;
+}
+.output_form .item .image {
+  overflow: hidden;
+  width: 325px;
+  height: 325px;
+  border-radius: 10px;
+  margin: 15px auto;
+  position: relative;
+  background-size: contain;
+}
+.output_form .item .image:hover .descr {
+  opacity: 1;
+  transition: all 300ms ease-in-out;
+}
+.output_form .item .image .descr {
+  opacity: 0;
+  width: 325px;
+  height: 325px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: #fff;
+  font-size: 20px;
+  transition: all 300ms ease-in-out;
+}
+.output_form .item .image .descr .fas {
+  display: block;
+  text-align: center;
+  font-size: 90px;
+  margin-bottom: 30px;
+}
+.output_form .item .image .descr .descr_text {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+}
+.output_form .item .image img {
+  height: 100%;
+  width: auto;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+/*# sourceMappingURL=style.css.map */
