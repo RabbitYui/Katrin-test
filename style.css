@@ -94,6 +94,12 @@ header .title {
 }
 .input_form .form_title .plus {
   display: inline-block;
+  color: #fff;
+  background: #1d0143;
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  text-align: center;
 }
 .input_form button {
   width: 342px;
